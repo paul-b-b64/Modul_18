@@ -1,0 +1,23 @@
+{% extends 'menu.html'%}
+
+<body>
+
+    {% block pagename %}
+        <h1>
+            Игры
+        </h1>
+    {% endblock %}
+
+    {% block menu %}
+        {{block.super}}
+    {% endblock %}
+
+    {% block content %}
+        {% for i in games %}
+        <p> {{i}} <button>заказать</button> </p>
+        {%endfor%}
+
+    {% endblock %}
+
+
+</body>

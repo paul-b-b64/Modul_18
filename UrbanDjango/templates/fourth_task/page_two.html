@@ -1,0 +1,20 @@
+{% extends 'menu.html'%}
+
+<body>
+  {% block pagename %}
+        <h1>
+            Корзина
+        </h1>
+    {% endblock %}
+
+    {% block menu %}
+        {{block.super}}
+    {% endblock %}
+
+    {% block content %}
+        <h2>
+            Извините, Ваша корзина пуста
+        </h2>
+    {% endblock %}
+
+</body>
